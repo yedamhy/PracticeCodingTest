@@ -28,7 +28,7 @@ def pop(now_deque, comment):
 
 def size(now_deque):
     print(len(now_deque))
-    return now_deque
+
 
 def empty(now_deque):
     if len(now_deque) == 0:
@@ -43,7 +43,6 @@ def front(now_deque):
     else:
         print(now_deque[0])
 
-    return now_deque
 
 def back(now_deque):
     if len(now_deque) == 0:
@@ -52,7 +51,6 @@ def back(now_deque):
     else:
         print(now_deque[-1])
 
-    return now_deque
 
 def main():
     n = int(input())
@@ -68,16 +66,16 @@ def main():
             now_deque = pop(now_deque, comment)
 
         elif comment == 'size':
-            now_deque = size(now_deque)
+            size(now_deque)
 
         elif comment == 'empty':
-            now_deque = empty(comment)
+            empty(now_deque)
 
         elif comment == 'front':
-            now_deque = front(comment)
+            front(now_deque)
 
         elif comment == 'back':
-            now_deque = back(comment)
+            back(now_deque)
 
 
 if __name__ == '__main__':
