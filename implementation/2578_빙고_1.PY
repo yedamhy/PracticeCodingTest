@@ -35,13 +35,12 @@ def check(bingo):
     if diagonal_cnt == 5:
         count += 1    
 
-    if count == 3:
+    if count >= 3:
         return True
     else: return False
 
 
 def main():
-    """
     bingo = []
     for _ in range(5):
         bingo.append(list(map(int, input().split())))
@@ -49,26 +48,13 @@ def main():
     answer = []
     for _ in range(5):
         answer += (list(map(int, input().split())))
-    """
-    bingo = [
-    [9, 10, 1, 11, 12],
-    [13, 14, 2, 15, 16],
-    [3, 4, 17, 5, 6],
-    [18, 19, 7, 20, 21],
-    [22, 23, 8, 24, 25]]
 
-    answer = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25]
 
     for num in answer:
         for bingo_row in bingo:
             if num in bingo_row:
                 bingo[bingo.index(bingo_row)][bingo_row.index(num)] = 0
-                print(bingo[0])
-                print(bingo[1])
-                print(bingo[2])
-                print(bingo[3])
-                print(bingo[4])
-                print("----------------", answer.index(num)+1)
+
                 if check(bingo):
                     print(answer.index(num) + 1)
                     return 
