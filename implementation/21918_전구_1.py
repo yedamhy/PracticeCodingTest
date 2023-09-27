@@ -5,52 +5,48 @@ def input():
 
 # 1번 명령어
 def first_command(i, x, now_bulb):
-    if now_bulb[i-1] == 0:
-        now_bulb[i-1] = 1
-
-    else: now_bulb[i-1] = 0
+    now_bulb[i-1] = x
 
     return now_bulb
+
 
 # 2번 명령어
 def second_command(l, r, now_bulb):
-    for i in range(l, r+1):
-        if now_bulb[i-1] == 0:
-            now_bulb[i-1] = 1
-
-        else: now_bulb[i-1] = 0
+    for i in range(l-1, r):
+        if now_bulb[i] == 0:
+            now_bulb[i] = 1
+        else:
+            now_bulb[i] = 0
 
     return now_bulb
 
-# 3번 명령어 
+# 3번 명령어
 def third_command(l, r, now_bulb):
-    for i in range(l, r+1):
-        if now_bulb[i-1] == 1:
-            now_bulb[i-1] = 0
+    for i in range(l-1, r):
+        now_bulb[i] = 0
 
     return now_bulb
 
 # 4번 명령어
 def fourth_command(l, r, now_bulb):
-    for i in range(l, r+1):
-        if now_bulb[i-1] == 0:
-            now_bulb[i-1] = 1
+    for i in range(l-1, r):
+        now_bulb[i] = 1
 
     return now_bulb
 
 # 제어 찾아주기
 def find_command(a, iorl, xorr, now_bulb):
     if a == 1:
-        first_command(iorl, xorr, now_bulb)
+        return first_command(iorl, xorr, now_bulb)
 
     if a == 2:
-        second_command(iorl, xorr, now_bulb)
+        return second_command(iorl, xorr, now_bulb)
     
     if a == 3:
-        third_command(iorl, xorr, now_bulb)
+        return third_command(iorl, xorr, now_bulb)
 
     if a == 4:
-        fourth_command(iorl, xorr, now_bulb)  
+        return fourth_command(iorl, xorr, now_bulb)  
 
     return now_bulb 
 

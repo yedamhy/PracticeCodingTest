@@ -26,7 +26,6 @@ def check_location(init_cow ,cow_num, location):
         init_cow[cow_num] = location
         count += 1
 
-    print(init_cow)
     return init_cow
 
 def main():
