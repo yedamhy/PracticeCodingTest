@@ -1,3 +1,4 @@
+# 프로그래머스 - 알고리즘 고득점 kit
 # 문제 링크 : https://school.programmers.co.kr/learn/courses/30/lessons/42748
 
 # merge 정렬
