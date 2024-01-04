@@ -15,16 +15,13 @@ jobs:
 
     - name: Update README
       run: |
-        # 기존 메인 README.md 내용을 임시 파일로 복사
-        cat README.md > temp_README.md
+        # 메인 README.md에서 기존 "정렬 관련 문제 풀이" 섹션 삭제
+        sed -i '/## 정렬 관련 문제 풀이/,/<hr>/d' README.md
 
-        # 정렬/README.md 내용을 임시 파일에 추가
-        echo " 
-        ## 정렬 관련 문제 풀이 " >> temp_README.md
-        cat 정렬/README.md >> temp_README.md
-
-        # 임시 파일을 메인 README.md로 이동
-        mv temp_README.md README.md
+        # 정렬/README.md 내용을 메인 README.md에 추가
+        echo "
+        ## 정렬 관련 문제 풀이" >> README.md
+        cat 정렬/README.md >> README.md
 
     - name: Commit and Push
       run: |
