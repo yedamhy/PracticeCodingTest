@@ -19,7 +19,7 @@ jobs:
         cat README.md > temp_README.md
 
         # 정렬/README.md 내용을 임시 파일에 추가
-        echo "\n# 정렬 관련 문제 풀이" >> temp_README.md
+        echo "<br><br> ## 정렬 관련 문제 풀이" >> temp_README.md
         cat 정렬/README.md >> temp_README.md
 
         # 임시 파일을 메인 README.md로 이동
