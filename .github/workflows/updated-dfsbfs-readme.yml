@@ -1,0 +1,32 @@
+name: Update Main README
+
+on:
+  push:
+    paths:
+      - '정렬/README.md'
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Update README
+      run: |
+        # 메인 README.md에서 기존 "DFS/BFS 관련 문제 풀이" 섹션 삭제
+        sed -i '/## DFS/BFS 관련 문제 풀이/,/<hr>/d' README.md
+
+        # 정렬/README.md 내용을 메인 README.md에 추가
+        echo "
+        ## DFS/BFS 관련 문제 풀이" >> README.md
+        cat DFS와BFS/README.md >> README.md
+
+    - name: Commit and Push
+      run: |
+        git config --global user.name 'yedamhy'
+        git config --global user.email 'yeadalm04@gmail.com'
+        git add README.md
+        git commit -m "Update main README with dfs bfs contents"
+        git push
