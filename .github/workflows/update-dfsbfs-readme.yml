@@ -3,7 +3,7 @@ name: Update Main README
 on:
   push:
     paths:
-      - '정렬/README.md'
+      - 'DFS와BFS/README.md'
 
 jobs:
   update-readme:
