@@ -15,8 +15,11 @@ jobs:
 
     - name: Update README
       run: |
-        # 메인 README.md에서 기존 "해시 스택,큐 관련 문제 풀이" 섹션 삭제
-        sed -i '/## 해시 스택,큐 관련 문제 풀이/,/<hr>/d' README.md
+        # "해시 스택,큐 관련 문제 풀이" 섹션이 존재하는지 확인
+        if grep -q "## 해시 스택,큐 관련 문제 풀이" README.md; then
+          # 존재한다면 해당 섹션 삭제
+          sed -i '/## 해시 스택,큐 관련 문제 풀이/,/<hr>/d' README.md
+        fi
 
         # 해시_스택_큐/README.md 내용을 메인 README.md에 추가
         echo "
