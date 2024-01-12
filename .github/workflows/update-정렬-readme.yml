@@ -23,10 +23,15 @@ jobs:
         ## 정렬 관련 문제 풀이" >> README.md
         cat 정렬/README.md >> README.md
 
-    - name: Commit and Push
+    - name: Setup Git
       run: |
         git config --global user.name 'yedamhy'
         git config --global user.email 'yeadalm04@gmail.com'
+        git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+
+    - name: Commit and Push
+      run: |
         git add README.md
         git commit -m "Update main README with 정렬 contents"
         git push
+
