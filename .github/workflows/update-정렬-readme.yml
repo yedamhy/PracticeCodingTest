@@ -27,7 +27,7 @@ jobs:
       run: |
         git config --global user.name 'yedamhy'
         git config --global user.email 'yeadalm04@gmail.com'
-        git remote set-url origin https://github.com/yedamhy/PracticeCodingTest:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+        git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/yedamhy/PracticeCodingTest
 
     - name: Commit and Push
       run: |
