@@ -31,3 +31,4 @@
 | 02 |     [같은 숫자는 싫어](./02_같은_숫자는_싫어.py)  | [프로그래머스](https://school.programmers.co.kr/learn/courses/30/lessons/12906)| LEVEL1 |  |
 | 03 | [괄호](./해시_스택_큐/03_괄호.py) | [백준](https://www.acmicpc.net/problem/9012) | 실버4 | 큐|
 | 04 | [제로](./해시_스택_큐/04_제로.py) | [백준](https://www.acmicpc.net/problem/10773) | 실버4 | 큐 |
+| 05 | [회사에 있는 사람](./해시_스택_큐/05_회사에_있는_사람.py)  | [백준](https://www.acmicpc.net/problem/7785) | 실버5 | 해시 | 
