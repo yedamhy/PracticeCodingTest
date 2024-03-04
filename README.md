@@ -1,4 +1,6 @@
 # 코딩테스트 연습
+[백준 문제집 참고](https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook.md)
+
 ## 기본 알고리즘 공부
 |    |          문제 풀이         | 
 |:--:|:--------------------------:|
