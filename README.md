@@ -9,17 +9,23 @@
 | 03 | [정렬](./basic/정렬) |
 | 04 | [해시](./basic/해시) |
 
-## 정렬
-|    |          문제 풀이         |  문제 사이트(링크)  |     난이도    |    풀이 횟수   | 
+## 배열
+|    |          문제 풀이         |  문제 사이트(링크)  |     난이도    |    유형   | 
 |:--:|:--------------------------:|:-------------------:|:--------------:|:--------------:|
-| 01 |   [K번째수](./정렬/01_K번째수.py)    | [프로그래머스](https://school.programmers.co.kr/learn/courses/30/lessons/42748)| LEVEL1 |  1️⃣  |
-| 02 | [가장 큰 수](./정렬/02_가장_큰_수.py) | [프로그래머스](https://school.programmers.co.kr/learn/courses/30/lessons/42746)| LEVEL2 | 1️⃣ |
-| 03 | [H-Index](./정렬/03_H-Index.py) | [프로그래머스](https://school.programmers.co.kr/learn/courses/30/lessons/42747)| LEVEL2 | 1️⃣ |
+| 01 | [숫자의 개수](./배열/01_숫자의_개수.py) | [백준](https://www.acmicpc.net/problem/2577) | 브론즈2 | 배열 |
+
+
+## 정렬
+|    |          문제 풀이         |  문제 사이트(링크)  |     난이도    |    유형   | 
+|:--:|:--------------------------:|:-------------------:|:--------------:|:--------------:|
+| 01 |   [K번째수](./정렬/01_K번째수.py)    | [프로그래머스](https://school.programmers.co.kr/learn/courses/30/lessons/42748)| LEVEL1 |  정렬  |
+| 02 | [가장 큰 수](./정렬/02_가장_큰_수.py) | [프로그래머스](https://school.programmers.co.kr/learn/courses/30/lessons/42746)| LEVEL2 | 정렬  |
+| 03 | [H-Index](./정렬/03_H-Index.py) | [프로그래머스](https://school.programmers.co.kr/learn/courses/30/lessons/42747)| LEVEL2 | 정렬  |
 
 
 
 ## DFS/BFS 
-|    |          문제 풀이         |  문제 사이트(링크)  |     난이도    |    풀이 횟수   | 
+|    |          문제 풀이         |  문제 사이트(링크)  |     난이도    |    유형   | 
 |:--:|:--------------------------:|:-------------------:|:--------------:|:--------------:|
 | 01 |   [타겟 넘버](./DFS와BFS/01_타겟_넘버.py)    | [프로그래머스](https://school.programmers.co.kr/learn/courses/30/lessons/43165)| LEVEL2 | 1️⃣ |
 | 02 | [네트워크](./DFS와BFS/02_네트워크.py) | [프로그래머스](https://school.programmers.co.kr/learn/courses/30/lessons/43162) | LEVEL3 | 1️⃣  |
